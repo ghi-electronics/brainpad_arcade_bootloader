@@ -58,7 +58,7 @@ const uint32_t configData[] = {
     67,        0x29,       // PIN_JACK_COMMLED = PC09
     70,        0x38,       // ACCELEROMETER_TYPE = MMA8453
     74,        0x12,       // PIN_BTN_MENU2 = PB02
-    93,        0x110028,   // PIN_USB_POWER = 0x110028
+    //93,        0x110028,   // PIN_USB_POWER = 0x110028
     151,       0x2,        // PIN_D1 = PA02
     152,       0x3,        // PIN_D2 = PA03
     153,       0x13,       // PIN_D3 = PB03
@@ -73,6 +73,9 @@ const uint32_t configData[] = {
     210,       0x10,       // PINS_PORT_SIZE = PA_16
     211,       0x1,        // BOOTLOADER_PROTECTION = 1
     212,       0x78,       // POWER_DEEPSLEEP_TIMEOUT = 120
+	400, 	   0x00,	   // PA0 as 
+	401, 	   0x01,
+	402, 	   0x05,
     0,         0,          0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
     0,         0,          0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
     0,         0,          0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
@@ -111,8 +114,8 @@ const uint8_t brain_4[] = {
     191, 191, 191, 191, 191, 191, 191, 191, 191, 191, 191, 191, 191, 191, 184};
 
 static void customLogo() {
-    printicon(0, 0, 15, brain_15);
-    printicon(0, 0, 4, brain_4);
+    printicon(0, 0, 1, brain_15);
+    printicon(0, 0, 1, brain_4);
 }
 
 #define CUSTOM_LOGO customLogo()
