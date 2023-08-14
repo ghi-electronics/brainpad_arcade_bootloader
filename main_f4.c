@@ -420,6 +420,8 @@ flash_write(uint32_t dst, const uint8_t *src, int len)
 
 
     flash_unlock();
+	
+	flash_clear_status_flags();
 
 	if (!erased && !is_blank(addr, size)) {
 		flash_erase_sector(sector, FLASH_CR_PROGRAM_X32);
