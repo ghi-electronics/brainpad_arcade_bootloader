@@ -48,7 +48,7 @@ const uint32_t configData[] = {
     51,        0x2a,       // PIN_BTN_MENU = PC10
     55,        0x28,       // PIN_LED1 = PC08
     59,        0x100,      // SPEAKER_VOLUME = 256
-    60,        0x9,        // PIN_JACK_TX = PA09
+    60,        0x2,        // PIN_JACK_TX = PA02
     61,        0x6,        // PIN_JACK_SENSE = PA06
     62,        0x4,        // PIN_JACK_HPEN = PA04
     63,        0xa,        // PIN_JACK_BZEN = PA10
@@ -58,6 +58,7 @@ const uint32_t configData[] = {
     67,        0x29,       // PIN_JACK_COMMLED = PC09
     70,        0x38,       // ACCELEROMETER_TYPE = MMA8453
     74,        0x12,       // PIN_BTN_MENU2 = PB02
+    //93,        0x110028,   // PIN_USB_POWER = 0x110028
     151,       0x2,        // PIN_D1 = PA02
     152,       0x3,        // PIN_D2 = PA03
     153,       0x13,       // PIN_D3 = PB03
@@ -72,9 +73,9 @@ const uint32_t configData[] = {
     210,       0x10,       // PINS_PORT_SIZE = PA_16
     211,       0x1,        // BOOTLOADER_PROTECTION = 1
     212,       0x78,       // POWER_DEEPSLEEP_TIMEOUT = 120
-	400, 	   0x00,	   // PA0 as 
-	401, 	   0x01,
-	402, 	   0x06,
+    400,       0x00,	    // PA0 as P0
+    401,       0x01,	    // PA1 as P1
+    402,       0x06,	    // PA6 as P2
     0,         0,          0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
     0,         0,          0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
     0,         0,          0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
